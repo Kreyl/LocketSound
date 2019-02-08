@@ -5983,13 +5983,13 @@ F 5 "0" H 10800 7500 60  0001 C CNN "SolderPoints"
 	1    10600 7150
 	1    0    0    -1  
 $EndComp
-Text Label 12450 7050 2    50   ~ 0
+Text Label 12650 7150 2    50   ~ 0
 AU_OUT_1V8
-Text Label 12450 6950 2    50   ~ 0
+Text Label 12650 7050 2    50   ~ 0
 AU_IN_1V8
-Text Label 12450 6850 2    50   ~ 0
+Text Label 12650 6950 2    50   ~ 0
 AU_CLK_1V8
-Text Label 12450 6750 2    50   ~ 0
+Text Label 12650 6850 2    50   ~ 0
 AU_FSYNC_1V8
 Text Label 10650 7150 0    50   ~ 0
 AU_OUT_3V3
@@ -6114,6 +6114,10 @@ Text Notes 10200 7450 2    50   ~ 0
 Hi->Lo
 Text Notes 10200 7650 2    50   ~ 0
 Hi->Lo
+Text Notes 10200 5550 2    50   ~ 0
+Hi->Lo 5
+Text Notes 10200 5650 2    50   ~ 0
+Hi<-Lo 5
 Wire Bus Line
 	12400 13450 12400 14550
 Wire Bus Line
