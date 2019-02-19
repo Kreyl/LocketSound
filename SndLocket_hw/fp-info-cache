@@ -1,4 +1,4 @@
-620148196918883
+623328455222108
 Antennas
 ANT_868_10d4x36
 PCB 75.7x37.5, AntPcb 14.8mm
@@ -146,6 +146,20 @@ ANT_YAGEO12x4
 0
 2
 2
+Antennas
+LcktSnd_2d41
+
+
+0
+2
+2
+Antennas
+LcktSnd_868
+
+
+0
+1
+1
 Antennas
 Locket5
 
@@ -2503,8 +2517,8 @@ FLT_LFB21
 
 
 0
-0
-0
+4
+4
 Radio
 Silmaril
 
