@@ -1,4 +1,4 @@
-update=15.02.2019 22:47:58
+update=22.02.2019 20:19:49
 version=1
 last_client=kicad
 [general]
@@ -27,7 +27,7 @@ version=1
 PageLayoutDescrFile=
 LastNetListRead=SndLocket.net
 CopperLayerCount=4
-BoardThickness=1.6
+BoardThickness=1
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -38,8 +38,8 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.16
-ViaDiameter1=0.7
+TrackWidth1=0.15
+ViaDiameter1=0.6
 ViaDrill1=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
@@ -64,16 +64,16 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.25
+SolderMaskClearance=0.06
+SolderMaskMinWidth=0.15
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=Wide
-Clearance=0.2
+Clearance=0.15
 TrackWidth=0.5
-ViaDiameter=0.7
+ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
