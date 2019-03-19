@@ -1749,16 +1749,6 @@ Text Label 6300 3250 2    60   ~ 0
 DIP2
 Text Label 6300 3350 2    60   ~ 0
 DIP3
-Text Label 1800 3550 0    60   ~ 0
-DIP4
-Text Label 1800 3650 0    60   ~ 0
-DIP5
-Text Label 1800 3750 0    60   ~ 0
-DIP6
-Text Label 1800 3850 0    60   ~ 0
-DIP7
-Text Label 1800 3950 0    60   ~ 0
-DIP8
 Wire Wire Line
 	2050 3950 1800 3950
 Wire Wire Line
@@ -7805,8 +7795,18 @@ Text Label 22700 3650 2    50   ~ 0
 SNS_PWR
 Wire Wire Line
 	22350 3650 22700 3650
-Wire Bus Line
-	12400 13450 12400 14550
+Text Label 1800 3750 0    60   ~ 0
+DIP6
+Text Label 1800 3850 0    60   ~ 0
+DIP7
+Text Label 1800 3550 0    60   ~ 0
+DIP4
+Text Label 1800 3950 0    60   ~ 0
+DIP8
 Wire Bus Line
 	7300 3250 7300 5000
+Wire Bus Line
+	12400 13450 12400 14550
+Text Label 1800 3650 0    60   ~ 0
+DIP5
 $EndSCHEMATC

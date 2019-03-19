@@ -1,2 +1,6 @@
 *.kicad_pcb-bak
 *.bak
+SndLocket_hw/.SndLocket.fsxview
+SndLocket_hw/SndLocket.ses
+*.xml
+*.dsn
