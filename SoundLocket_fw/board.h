@@ -45,10 +45,12 @@
 #define BAT_ADC_PIN     GPIOB, 1
 
 // Light
-#define LUMOS_CTRL      { GPIOA, 6, TIM16, 1, invNotInverted, omPushPull, 255 }
-#define LED_B_PIN       { GPIOA, 8, TIM1, 1, invNotInverted, omPushPull, 255 }
-#define LED_R_PIN       { GPIOA, 9, TIM1, 2, invNotInverted, omPushPull, 255 }
-#define LED_G_PIN       { GPIOA, 10, TIM1, 3, invNotInverted, omPushPull, 255 }
+#define LED_R1_PIN      { GPIOD, 12, TIM4, 1, invNotInverted, omPushPull, 255 }
+#define LED_G1_PIN      { GPIOD, 13, TIM4, 2, invNotInverted, omPushPull, 255 }
+#define LED_B1_PIN      { GPIOD, 14, TIM4, 3, invNotInverted, omPushPull, 255 }
+#define LED_R2_PIN      { GPIOD, 15, TIM4, 4, invNotInverted, omPushPull, 255 }
+#define LED_G2_PIN      { GPIOC,  6, TIM3, 1, invNotInverted, omPushPull, 255 }
+#define LED_B2_PIN      { GPIOC,  7, TIM3, 2, invNotInverted, omPushPull, 255 }
 
 // USB
 #define USB_DM          GPIOA, 11
@@ -60,18 +62,9 @@
 #define CC_Setup0       SPI1, GPIOB, 3,4,5, GPIOA,15, GPIOB,0
 
 // UART
-#define UART_GPIO       GPIOB
-#define UART_TX_PIN     6
-#define UART_RX_PIN     7
-
-// Acc
-#define ACG_IRQ_PIN     GPIOC, 13
-#define ACG_CS_PIN      GPIOB, 12
-#define ACG_SCK_PIN     GPIOB, 13, omPushPull, pudNone, AF5
-#define ACG_MISO_PIN    GPIOB, 14, omPushPull, pudNone, AF5
-#define ACG_MOSI_PIN    GPIOB, 15, omPushPull, pudNone, AF5
-#define ACG_PWR_PIN     GPIOB, 11
-#define ACG_SPI         SPI2
+#define UART_GPIO       GPIOA
+#define UART_TX_PIN     9
+#define UART_RX_PIN     10
 
 // I2C
 #define I2C1_GPIO       GPIOB
