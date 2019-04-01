@@ -73,6 +73,9 @@
 // I2C Alternate Function
 #define I2C_AF          AF4
 
+// Sensor
+#define SNS_PWR_EN      GPIOC, 2
+
 #define EE_PWR_PIN      GPIOB, 10
 
 #endif // GPIO

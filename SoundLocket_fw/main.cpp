@@ -12,18 +12,19 @@
 //#include "main.h"
 #include "SimpleSensors.h"
 #include "buttons.h"
+#include "ir_rx.h"
 
 #if 1 // ======================== Variables and defines ========================
 // Forever
 EvtMsgQ_t<EvtMsg_t, MAIN_EVT_Q_LEN> EvtQMain;
-static const UartParams_t CmdUartParams(115200, CMD_UART_PARAMS);
+static const UartParams_t CmdUartParams(256000, CMD_UART_PARAMS);
 CmdUart_t Uart{&CmdUartParams};
 static void ITask();
 static void OnCmd(Shell_t *PShell);
 
 // ==== Periphery ====
 //Vibro_t Vibro {VIBRO_CTRL};
-//LedRGB_t Led { LED_R_PIN, LED_G_PIN, LED_B_PIN };
+LedRGB_t Led { LED_R1_PIN, LED_G1_PIN, LED_B1_PIN };
 
 // ==== Timers ====
 //static TmrKL_t TmrEverySecond {MS2ST(1000), evtIdEverySecond, tktPeriodic};
@@ -34,7 +35,7 @@ static void OnCmd(Shell_t *PShell);
 int main(void) {
     // ==== Init Vcore & clock system ====
 //    Clk.SetCoreClk(cclk16MHz);
-//    Clk.SetCoreClk(cclk48MHz);
+    Clk.SetCoreClk(cclk48MHz);
     Clk.UpdateFreqValues();
 
     // === Init OS ===
@@ -47,11 +48,13 @@ int main(void) {
     Printf("\r%S %S\r", APP_NAME, XSTRINGIFY(BUILD_TIME));
     Clk.PrintFreqs();
 
+    IrRx_Init();
+
 //    i2c1.Init();
 //    i2c1.ScanBus();
 
-//    Led.Init();
-//    Led.StartOrRestart(lsqStart);
+    Led.Init();
+    Led.StartOrRestart(lsqStart);
 
 //    Vibro.Init();
 //    Vibro.StartOrRestart(vsqBrrBrr);
