@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Project xsi:noNamespaceSchemaLocation="Project.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Version current="1"/>
-	<Format>Project</Format>
-	<Header>
-		<Program name="TopoR" version="6.1"/>
-		<GUID>{FB53966C-FA90-4D99-A889-AE83F2B7D276}</GUID>
-		<Annotation>Project file</Annotation>
-	</Header>
-	<Document>
-		<LocalLibrary />
-		<Pcb>
-			<File path=".\SndLocket.fsx" Folder="-1" isopened="0"/>
-		</Pcb>
-		<ARouteSessions>
-		</ARouteSessions>
-	</Document>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--*************************************-->
+<!--   File    : SndLocket.fsproj        -->
+<!--   Format  : TopoR Project file      -->
+<!--   Version : 2                       -->
+<!--   Program : TopoR 8 Layer 7.0.18661 -->
+<!--   Date    : Monday, May 27, 2019    -->
+<!--   Time    : 10:31                   -->
+<!--*************************************-->
+
+<Project>
+   <Version current="2"/>
+   <GUID>{FB53966C-FA90-4D99-A889-AE83F2B7D276}</GUID>
+   <Documents>
+      <Section name="PCB" isExpanded="true">
+         <File path=".\SndLocket.fsx" isopened="0" dateChange="2019-02-23 17:38:15"/>
+      </Section>
+      <Section name="AutoRouting" isExpanded="true"/>
+   </Documents>
 </Project>
